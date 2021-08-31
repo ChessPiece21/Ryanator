@@ -3,7 +3,7 @@
     "version": "1.0",
     "manifest_version": 2,
     "description": "Are you a Veep fan? Do you actually believe what Jonah Ryan says? Well, now you can manifest that on your compooter!",
-    "homepage_url": "",
+    "homepage_url": "https://github.com/ChessPiece21/Ryanator",
     "icons": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
