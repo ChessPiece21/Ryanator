@@ -1,30 +1,18 @@
-chrome.extension.sendMessage({}, function(response) {
-    var readyStateCheckInterval = setInterval(function() {
-        if (document.readyState === "complete") {
-            clearInterval(readyStateCheckInterval);
+var elements = document.getElementsByTagName('*');
 
-            main();
+for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+
+    for (var j = 0; j < element.childNodes.length; j++) {
+        var node = element.childNodes[j];
+
+        if (node.nodeType === 3) {
+            var text = node.nodeValue;
+            var replacedText = text.replace(/algebra/gi, 'Al-Jazeera');
+
+            if (replacedText !== text) {
+                element.replaceChild(document.createTextNode(replacedText), node);
+            }
         }
-    }, 10);
-
-    function main() {
-        // Replace page title
-        document.title = generateReplacment(document.title);
-
-        // Get all text nodes to check
-        var textNodes = $('body *').contents().filter(function() {
-            return this.nodeType == Node.TEXT_NODE;
-        });
-
-        // Replace all text nodes
-        textNodes.each(function(index, textNode) {
-            textNode.nodeValue = generateReplacment(textNode.nodeValue);
-        });
     }
-
-    function generateReplacment(text) {
-        var regex1 = /algebra/;
-        return text.replace(regex1, replace("algebra", "Al-Jazeera"));
-    }
-
-});
+}
