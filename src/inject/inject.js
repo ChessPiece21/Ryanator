@@ -23,8 +23,8 @@ chrome.extension.sendMessage({}, function(response) {
     }
 
     function generateReplacment(text) {
-        var regex1 = /algebra/gi;
-        return text.replace(regex1, getName()).replace("algebra", "Al-Jazeera");
+        var regex1 = /algebra/;
+        return text.replace(regex1, replace("algebra", "Al-Jazeera"));
     }
 
 });
