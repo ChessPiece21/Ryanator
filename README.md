@@ -1,7 +1,8 @@
 # Ryanator
 Are you a fan of the HBO sitcom Veep? Do you believe what former Vice President Jonah Ryan claims to believe?
 <div/>
-If you do, then you're in luck! The Ryanator is a Chrome extension that changes instances of "algebra" to "Al-Jazeera," referencing a joke from the hit sitcom: https://www.youtube.com/watch?v=embMAtagQiU
+If you do, then you're in luck! 
+<div/>The Ryanator is a Chrome extension that changes instances of "algebra" to "Al-Jazeera," referencing a joke from the hit sitcom: https://www.youtube.com/watch?v=embMAtagQiU
 <div/>
 I'm definitely going to add more words to this once I figure it out.
 <div/>
