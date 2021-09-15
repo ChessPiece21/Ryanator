@@ -14,3 +14,6 @@ So I presently do not have enough money to upload this to Chrome Developers, but
 4. And you're done!
 
 Have fun, and remember, NO MORE MATH!
+
+# Proof It Works:
+As requested by a Redditor: https://i.imgur.com/UT1uQoM.png
